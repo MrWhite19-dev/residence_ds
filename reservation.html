@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez RÉSIDENCE DS à Abidjan pour demander une réservation.">
+  <title>Réservation | RÉSIDENCE DS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="RÉSIDENCE DS, accueil"><span class="brand-mark">DS</span><span class="brand-name">RÉSIDENCE <strong>DS</strong><small>Votre séjour à Abidjan</small></span></a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a><a class="active" href="reservation.html">Réservation</a><a href="index.html#about">Présentation</a><a href="index.html#contact">Contact</a>
+        <a class="nav-cta" href="https://wa.me/2250576046084?text=Bonjour%20R%C3%89SIDENCE%20DS%2C%20je%20souhaite%20des%20informations%20sur%20une%20r%C3%A9servation." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Réserver</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-content"><p class="eyebrow"><span></span> RÉSIDENCE DS · ABIDJAN</p><h1>Préparez votre <em>séjour.</em></h1><p>Envoyez votre demande directement à notre équipe via WhatsApp.</p><div class="breadcrumb"><a href="index.html">Accueil</a><i class="fa-solid fa-chevron-right"></i><span>Réservation</span></div></div>
+    </section>
+
+    <section class="section booking-section">
+      <div class="container booking-grid">
+        <div class="booking-intro">
+          <p class="eyebrow dark-eyebrow">DEMANDE DE RÉSERVATION</p>
+          <h2>Quelques détails,<br><em>et c’est parti.</em></h2>
+          <p>Complétez les informations ci-dessous. Votre demande sera préparée dans un message WhatsApp que vous pourrez vérifier avant de l’envoyer.</p>
+          <div class="booking-note"><i class="fa-solid fa-circle-info"></i><p>Cette page transmet une demande, pas une confirmation automatique. Les disponibilités, tarifs et conditions doivent être confirmés par la résidence.</p></div>
+          <div class="mini-contact"><span><i class="fa-solid fa-phone"></i></span><div><small>Vous préférez appeler ?</small><a href="tel:+2250576046084">05 76 04 6084</a></div></div>
+        </div>
+        <div class="booking-card">
+          <form id="booking-form">
+            <div class="form-heading"><span>01</span><div><h3>Votre demande</h3><p>Renseignez les champs utiles.</p></div></div>
+            <div class="form-row">
+              <div class="field"><label for="fullname">Nom complet</label><input id="fullname" name="fullname" type="text" placeholder="Votre nom" autocomplete="name" required></div>
+              <div class="field"><label for="phone">Votre téléphone</label><input id="phone" name="phone" type="tel" placeholder="Ex. 07 00 00 00 00" autocomplete="tel" required></div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="arrival">Date d’arrivée souhaitée</label><input id="arrival" name="arrival" type="date" required></div>
+              <div class="field"><label for="departure">Date de départ souhaitée</label><input id="departure" name="departure" type="date" required></div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="guests">Nombre de personnes</label><select id="guests" name="guests" required><option value="">Choisir</option><option>1 personne</option><option>2 personnes</option><option>3 personnes</option><option>4 personnes</option><option>5 personnes ou plus</option></select></div>
+              <div class="field"><label for="room">Type de logement souhaité</label><select id="room" name="room" required><option value="">Choisir</option><option>Chambre</option><option>Appartement</option><option>À conseiller par la résidence</option></select></div>
+            </div>
+            <div class="field"><label for="message">Précisions complémentaires <span>(facultatif)</span></label><textarea id="message" name="message" rows="4" placeholder="Votre demande ou vos questions..."></textarea></div>
+            <button class="btn btn-primary submit-btn" type="submit">Envoyer la demande sur WhatsApp <i class="fa-brands fa-whatsapp"></i></button>
+            <p class="form-disclaimer"><i class="fa-solid fa-lock"></i> Vos informations seront ajoutées au message WhatsApp, que vous pourrez relire avant l’envoi.</p>
+            <p class="form-error" id="form-error" role="alert" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-inner"><div><p class="eyebrow">UNE QUESTION ?</p><h2>Parlons directement.</h2><p>Appelez-nous ou écrivez-nous sur WhatsApp.</p></div><a class="btn btn-light" href="https://wa.me/2250576046084?text=Bonjour%20R%C3%89SIDENCE%20DS%2C%20j%27ai%20une%20question." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Écrire à la résidence</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="index.html">RÉSIDENCE <strong>DS</strong></a><p>© <span data-year></span> RÉSIDENCE DS. Tous droits réservés.</p><a href="index.html">Retour à l’accueil <i class="fa-solid fa-arrow-right"></i></a></div></footer>
+  <a class="whatsapp-float" href="https://wa.me/2250576046084?text=Bonjour%20R%C3%89SIDENCE%20DS" target="_blank" rel="noopener noreferrer" aria-label="Contacter RÉSIDENCE DS sur WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+</body>
+</html>
